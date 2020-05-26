@@ -1,0 +1,96 @@
+<!--
+index.php line::83 time::1590398434.1866 memory::1567616 tetsuryokukai<br>
+-->
+<!DOCTYPE html>
+<html lang="ja" itemscope itemtype="http://schema.org/Organization">
+<head>
+<meta charset="UTF-8">
+<title>鉄緑会 | study24365 スクール</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="NOINDEX,NOFOLLOW" />
+<link rel="stylesheet" href="/user/statics/css/base.css" media="all" type="text/css">
+<link rel="stylesheet" href="/user/statics/css/theme.css" media="all" type="text/css">
+<link rel="stylesheet" href="/user/statics/css/style.css" media="all" type="text/css">
+<script src="/user/statics/js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body id="top" class="login">
+<div class="body_wrap">
+
+<!--ヘッダーエリア-->
+<header style="background-color:#0f4c77;"><!--カラー値を管理画面で設定-->
+<!--ロゴ-->
+<div id="logo">
+<a href="#">
+<img src="/images/modules/mtr/school/school_logo_image-1" alt="鉄緑会"/><!--src値を管理画面で設定-->
+</a>
+</div>
+</header>
+
+<!--FVエリア：ログイン画面専用-->
+<section class="fv">
+<div class="pc" style="background-image: url(/images/modules/mtr/school/school_l_image_pc-1);">
+</div><!--ログイン・PC：background-imageのurl値を管理画面で設定-->
+<div class="sp">
+<img src="/images/modules/mtr/school/school_l_image_sp-1" alt="FVsp"/><!--ログイン・SP：imgのsrc値を管理画面で設定-->
+</div>
+</section>
+
+
+<!--メインコンテンツ-->
+<main>
+<h1>ログイン</h1><!-- #BeginLibraryItem "/Library/front_aleart.lbi" -->
+<!--アラート-->
+<div class="alert_area">
+
+
+
+</div>
+<!--/アラート-->
+<!-- #EndLibraryItem -->
+
+
+
+<!--section class="form">
+<h2>ログインせずに利用する</h2>
+<form action="/user/modules/course_list.php" method="post">
+<div class="btn_area">
+<button type="submit" class="btn_add">ログインせずに利用</button>
+</div>
+</form>
+</section-->
+
+<section class="form">
+<h2>会員の方はこちら</h2>
+<form class="form-signin" method="post">
+<input type="hidden" name="exec" value="Login">
+<p class="comment">会員ID</p>
+<input name="login_id" type="text" class="input-block-level" id="loginID" placeholder="会員ID" value="">
+<p class="comment">パスワード</p>
+<input name="password" type="password" class="input-block-level" id="password" placeholder="パスワード" value="">
+
+<div class="btn_area">
+<button class="btn_submit" type="submit">ログイン</button>
+</div>
+
+<p class="forget">パスワードを忘れた方は<a href="/user/modules/user_forget.php">こちら</a></p>
+
+</form>
+</section>
+
+
+<!--section class="form">
+<h2>新規登録はこちら</h2>
+<form action="/user/modules/user_entry_code_send.php" method="post">
+<div class="btn_area">
+<button type="submit" class="btn_submit">新規会員登録</button>
+</div>
+
+</form>
+</section-->
+
+
+</main>
+</div><!--/body_wrap-->
+</body>
+</html>
