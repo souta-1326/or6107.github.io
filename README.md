@@ -2,4 +2,4 @@
 
 You can view this page at the next url.
 
-https://or6107.github.io/
+https://OR6107.github.io/
