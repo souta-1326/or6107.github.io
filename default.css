@@ -34,10 +34,14 @@
 
 
 header{
-  background-color:#19006e;
-  color:white;
+  background-color:white;
+  color:#19006e;
   padding:10px;
   margin-bottom:10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
 }
 
 ul{
@@ -176,20 +180,20 @@ dd{
   margin-left: 2.5em;
 }
 span.navi a{
-  color:white;
+  color:#19006e;
   margin:8px;
   padding:5px;
   border-radius: 10px;
   font-weight: 600;
 }
 span.navi a.selected{
-  color:#19006e;
-  background-color: white;
+  color:white;
+  background-color: #19006e;
   font-weight: 600;
 }
 span.navi a:hover{
-  color:#19006e;
-  background-color: white;
+  color:white;
+  background-color: #19006e;
   font-weight: 600;
 }
 header:after{
@@ -225,8 +229,10 @@ span.logo{
 }
 
 body{
+ background-color: rgb(221, 255, 253);
  width:100%;
  padding-bottom: 2em;
+ margin-top: 80px;
 }
 
 div.title1{
@@ -497,4 +503,9 @@ table.whatsnew td {
   border-style: dotted;
   position: relative;
 }
- 
+
+ /*
+p.double-bottom {
+  border-bottom: double;
+  }
+*/
