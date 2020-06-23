@@ -89,6 +89,21 @@ h2.new{
   margin-right:-.5em;
 }
 
+h2.notification{
+  color:#295890;
+  font-size:20px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:8px;
+  margin-top:20px;
+  margin-bottom:10px;
+  border-width: 0px 0px 1px 10px;
+  border-style: solid;
+  border-color: #295890;
+  margin-left:-.5em;
+  margin-right:-.5em;
+}
+
 h2{
   color:#19006e;
   font-size:20px;
