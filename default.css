@@ -31,10 +31,10 @@
   text-justify: inter-ideograph;
 }
 
-
+/* rgb(221, 255, 253) */
 
 header{
-  background-color:rgb(252, 255, 211);
+  background-color:#ffffff;
   color:#19006e;
   padding:10px;
   margin-bottom:10px;
@@ -242,7 +242,7 @@ span.logo{
 }
 
 body{
- background-color: rgb(221, 255, 253);
+ background-color: rgb(253, 255, 221);
  width:100%;
  padding-bottom: 2em;
 }
