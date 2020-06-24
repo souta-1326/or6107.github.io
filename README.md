@@ -1,5 +1,9 @@
-# homepage
+# What is this package?
 
-You can view this page at the next url.
+This package is the OR6107's website source.
 
+This package is publicly available.
+
+You can view the website here.
+↓
 https://OR6107.github.io/
