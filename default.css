@@ -74,6 +74,21 @@ h1{
   color:#19006e;
 }
 
+h2.twitter{
+  color:#1da1f2;
+  font-size:20px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:8px;
+  margin-top:20px;
+  margin-bottom:10px;
+  border-width: 0px 0px 1px 10px;
+  border-style: solid;
+  border-color: #1da1f2;
+  margin-left:-.5em;
+  margin-right:-.5em;
+}
+
 h2.new{
   color:#d40729;
   font-size:20px;
@@ -260,7 +275,7 @@ span.title1{
 }
 
 div.container{
-  width:600px;
+  width:1000px;
   display:block;
   margin:0 auto;
 }
@@ -516,6 +531,19 @@ table.whatsnew td {
   position: relative;
 }
 
+div.twitter {
+  float: left;
+  /*overflow: hidden;*/
+  width: 250px;
+  margin: 0 30px 0 30px;
+}
+
+div.others {
+  float: left;
+  margin: 0 30px 0 30px;
+	/*width:661px;*/
+  width: 600px;
+}
  /*
 p.double-bottom {
   border-bottom: double;
