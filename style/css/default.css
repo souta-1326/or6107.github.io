@@ -2,20 +2,20 @@
 @font-face {
   font-family: "SourceHanSansJP-Light";
   src:
-    url("fonts/SourceHanSansJP-Light.woff") format('woff'),
-    url("fonts/SourceHanSansJP-Light.otf") format('opentype');
+    url("../../fonts/SourceHanSansJP-Light.woff") format('woff'),
+    url("../../fonts/SourceHanSansJP-Light.otf") format('opentype');
 }
 @font-face {
   font-family: "SourceHanSansJP-Normal";
   src:
-    url("fonts/SourceHanSansJP-Normal.woff") format('woff'),
-    url("fonts/SourceHanSansJP-Normal.otf") format('opentype');
+    url("../../fonts/SourceHanSansJP-Normal.woff") format('woff'),
+    url("../../fonts/SourceHanSansJP-Normal.otf") format('opentype');
 }
 @font-face {
   font-family: "SourceHanSansJP-Regular";
   src:
-    url("fonts/SourceHanSansJP-Regular.woff") format('woff'),
-    url("fonts/SourceHanSansJP-Regular.otf") format('opentype');
+    url("../../fonts/SourceHanSansJP-Regular.woff") format('woff'),
+    url("../../fonts/SourceHanSansJP-Regular.otf") format('opentype');
 }
 
 *{
