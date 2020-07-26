@@ -36,8 +36,11 @@ header{
   color:#19006e;
   padding:10px;
   margin-bottom:10px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
 }
 
 ul{
@@ -301,6 +304,9 @@ div.container{
   width:1000px;
   display:block;
   margin:0 auto;
+  position:relative;
+  top: 60px;
+  z-index: 0;
 }
 
 div.contents,
@@ -566,6 +572,12 @@ div.others {
   margin: 0 30px 0 30px;
 	/*width:661px;*/
   width: 600px;
+}
+
+div.indexpage {
+  margin: 0 30px 0 30px;
+  width: 1070px;
+  margin:0 auto;
 }
 
 div.main {
