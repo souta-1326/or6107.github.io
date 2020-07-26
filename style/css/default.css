@@ -135,14 +135,14 @@ h2.note{
   margin-left:-.5em;
   margin-right:-.5em;
   text-shadow    : 
-   1px  1px 0px #000000,
-  -1px  1px 0px #000000,
-   1px -1px 0px #000000,
-  -1px -1px 0px #000000,
-   1px  0px 0px #000000,
-   0px  1px 0px #000000,
-  -1px  0px 0px #000000,
-   0px -1px 0px #000000; 
+   1px  1px 0px #818181,
+  -1px  1px 0px #818181,
+   1px -1px 0px #818181,
+  -1px -1px 0px #818181,
+   1px  0px 0px #818181,
+   0px  1px 0px #818181,
+  -1px  0px 0px #818181,
+   0px -1px 0px #818181; 
 }
 
 h2{
