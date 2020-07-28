@@ -576,7 +576,7 @@ div.others {
 
 div.indexpage {
   margin: 0 30px 0 30px;
-  width: 1070px;
+  width: 970px;
   margin:0 auto;
 }
 
@@ -585,6 +585,34 @@ div.main {
   width: 600px;
   margin:0 auto;
 }
+
+/*****************sakuhin******************/
+
+div.sakuhinindex {
+  margin: 0 0 0 0;
+  width: 600px;
+  margin: 10px 0 50px 10px;
+}
+
+div.sakuhintext {
+  float: left;
+  /*overflow: hidden;*/
+  width: 380px;
+  margin: 0 20px 0 0;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+div.sakuhinpage {
+  float: left;
+  /*overflow: hidden;*/
+  width: 160px;
+  margin: 0 0 0 20px;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+/*************************************************/
 
 .text-center{
   text-align: center;
