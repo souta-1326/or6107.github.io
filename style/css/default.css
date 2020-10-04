@@ -45,6 +45,7 @@ header{
 
 ul{
   margin-left:60px;
+  margin-bottom: 10px;
   list-style: disc;
 }
 
@@ -194,6 +195,8 @@ h3{
   border-width: 0px 0px 1px 5px;
   border-style: solid;
   border-color: #036b32;
+  margin-top:10px;
+  margin-bottom:10px;
   padding-left:8px;
 }
 
@@ -618,8 +621,21 @@ div.sakuhinpage {
   text-align: center;
 }
 
- /*
+/*
 p.double-bottom {
   border-bottom: double;
   }
 */
+
+/*************************************************/
+
+
+img.twitter {
+  vertical-align: middle;
+}
+
+
+h4{
+  margin-top:10px;
+  margin-bottom:10px;
+}
