@@ -199,7 +199,10 @@
 					}
 					border_shape.graphics.mt(x, 0).lt(x, PANEL_HEIGHT)
 				}
-				if (unix > x_max) { break_flag = true; break; }
+				if (unix > x_max) {
+					break_flag = true;
+					break;
+				}
 			}
 			if (break_flag) break;
 		}
@@ -244,8 +247,7 @@
 			vertex_shapes[i].hitArea = hitArea;
 			vertex_shapes[i].addEventListener("mouseover", mouseoverVertex);
 			vertex_shapes[i].addEventListener("mouseout", mouseoutVertex);
-		}
-		{
+		} {
 			var dx = 80;
 			if ((x_min + x_max) / 2 < rating_history[highest_i].EndTime) dx = -80;
 			var x = vertex_shapes[highest_i].x + dx;
@@ -277,13 +279,13 @@
 		date_text = newText(stage_status, OFFSET_X + 200, OFFSET_Y + STATUS_HEIGHT / 4, "14px Lato");
 		contest_name_text = newText(stage_status, OFFSET_X + 200, OFFSET_Y + STATUS_HEIGHT / 1.6, "20px Lato");
 		date_text.textAlign = contest_name_text.textAlign = "left";
-		contest_name_text.maxWidth = STATUS_WIDTH - 200 - 10;
-		{
-			var hitArea = new cj.Shape(); hitArea.graphics.f("#000").r(0, -12, contest_name_text.maxWidth, 24);
+		contest_name_text.maxWidth = STATUS_WIDTH - 200 - 10; {
+			var hitArea = new cj.Shape();
+			hitArea.graphics.f("#000").r(0, -12, contest_name_text.maxWidth, 24);
 			contest_name_text.hitArea = hitArea;
 			contest_name_text.cursor = "pointer";
 			contest_name_text.addEventListener("click", function () {
-				location.href = standings_url;
+				window.open(standings_url, '_blank');
 			});
 		}
 		particles = new Array();
@@ -304,9 +306,11 @@
 	}
 
 	function getOrdinal(x) {
-		var s = ["th", "st", "nd", "rd"], v = x % 100;
+		var s = ["th", "st", "nd", "rd"],
+			v = x % 100;
 		return x + (s[(v - 20) % 10] || s[v] || s[0]);
 	}
+
 	function getDiff(x) {
 		var sign = x == 0 ? 'ﾂｱ' : (x < 0 ? '-' : '+');
 		return sign + Math.abs(x);
@@ -314,10 +318,13 @@
 
 	function setStatus(data, particle_flag) {
 		var date = new Date(data.EndTime * 1000);
-		var rating = data.NewRating, old_rating = data.OldRating;
+		var rating = data.NewRating,
+			old_rating = data.OldRating;
 		var place = data.Place;
 		var contest_name = data.ContestName;
-		var tmp = getColor(rating); var color = tmp[1], alpha = tmp[2];
+		var tmp = getColor(rating);
+		var color = tmp[1],
+			alpha = tmp[2];
 		border_status_shape.graphics.c().s(color).ss(1).rr(OFFSET_X, OFFSET_Y, STATUS_WIDTH, STATUS_HEIGHT, 2);
 		rating_text.text = rating;
 		rating_text.color = color;
