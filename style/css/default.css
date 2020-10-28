@@ -562,7 +562,8 @@ div.others {
   float: left;
   margin: 0 30px 0 30px;
   /*width:661px;*/
-  width: 600px;
+  min-width: 550px;
+
 }
 
 div.indexpage {
