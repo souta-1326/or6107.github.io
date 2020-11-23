@@ -95,7 +95,7 @@ let draw = function () {
   attr('dy', '0.35em').
   style("opacity", 0).
   style('fill', (d, i) => colors[i]).
-  text((d, i) => textdata[i]).
+  text((d, i) => textdata[i] +'('+ dataset[i] +')').
   attr('transform', d => {
     // calculate outerArc centroid for 'this' slice
     let pos = outerArc.centroid(d);
@@ -104,7 +104,7 @@ let draw = function () {
     return `translate(${pos})`;
   }).
   style('text-anchor', d => midAngle(d) < Math.PI ? "start" : "end").
-  style('font-size', 'large').
+  style('font-size', 'small').
   transition().
   delay((d, i) => arcAnimDur + i * secIndividualdelay).
   duration(secDur).

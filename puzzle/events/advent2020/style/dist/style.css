@@ -45,16 +45,16 @@ button {
   outline: none;
   font-size: .6em;
   background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #0d0d0d;
+  border: 1px solid #0d0d0d;
   letter-spacing: 1px;
   -webkit-transition: all 250ms;
   transition: all 250ms;
 }
 button:hover {
-  background-color: #fff;
-  color: #0d0d0d;
-  box-shadow: 0 0 2px #fff;
+  background-color: #0d0d0d;
+  color: #fff;
+  box-shadow: 0 0 2px #0d0d0d;
 }
 button:active {
   opacity: 0.5;
