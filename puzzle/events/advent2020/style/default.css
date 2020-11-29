@@ -193,11 +193,11 @@ a {
   text-decoration: none;
 }
 
-a:link,
+/* a:link,
 a:visited {
   color: blue;
   font-weight: 600;
-}
+} */
 
 a.off-button:link,
 a.off-button:visited {
