@@ -199,8 +199,26 @@ a:visited {
   font-weight: 600;
 }
 
-a.abutton:link,
-a.abutton:visited {
+a.off-button:link,
+a.off-button:visited {
+  background-color: #757575;
+  padding: 8px;
+  color: white;
+  border-radius: 8px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+div.button{
+  text-align: center;
+  vertical-align: middle;
+  margin: 30px auto;
+}
+
+a.on-button:link,
+a.on-button:visited {
   background-color: #ffb520;
   padding: 8px;
   color: black;
@@ -211,7 +229,10 @@ a.abutton:visited {
   transition: all 0.5s;
 }
 
-a.abutton:hover {
+a.off-button:hover {
+  background-color: #19006e;
+}
+a.on-button:hover {
   background-color: #ff6b80;
 }
 
@@ -678,6 +699,7 @@ table.calendar {
   /* display: table-row; */
   /* vertical-align: inherit; */
   border-color: inherit;
+  text-align: center;
 }
 
 table.calendar th {
@@ -697,8 +719,8 @@ table.calendar th {
 table.calendar td {
   border: 1px solid #e5e5e5;
   background-color: #fff;
-  text-align: left;
   padding: 10px;
+  height: 130px;
   vertical-align: top;
   position: relative;
   /* vertical-align: top; */
