@@ -193,11 +193,11 @@ a {
   text-decoration: none;
 }
 
-/* a:link,
+a:link,
 a:visited {
   color: blue;
   font-weight: 600;
-} */
+}
 
 a.off-button:link,
 a.off-button:visited {
@@ -214,7 +214,14 @@ a.off-button:visited {
 div.button{
   text-align: center;
   vertical-align: middle;
-  margin: 30px auto;
+  margin: 20px auto;
+}
+
+div.level{
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  bottom: 10px auto;
 }
 
 a.on-button:link,
