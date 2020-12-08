@@ -209,6 +209,7 @@ a.off-button:visited {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  pointer-events: none;
 }
 
 div.button{
@@ -236,9 +237,22 @@ a.on-button:visited {
   transition: all 0.5s;
 }
 
-a.off-button:hover {
+a.rest-button:link,
+a.rest-button:visited {
   background-color: #19006e;
+  padding: 8px;
+  color: white;
+  border-radius: 8px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  pointer-events: none;
 }
+
+/* a.off-button:hover {
+  background-color: #19006e;
+} */
 a.on-button:hover {
   background-color: #ff6b80;
 }
