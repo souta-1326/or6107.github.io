@@ -312,7 +312,7 @@
 	}
 
 	function getDiff(x) {
-		var sign = x == 0 ? 'ﾂｱ' : (x < 0 ? '-' : '+');
+		var sign = x == 0 ? '±' : (x < 0 ? '-' : '+');
 		return sign + Math.abs(x);
 	}
 
