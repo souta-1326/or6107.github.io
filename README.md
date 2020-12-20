@@ -1,11 +1,7 @@
-# What is this package?
+# What is this repository?
 
-This package is the OR6107's website source.
+This repository is the OR6107's website source.It is publicly available.
 
-This package is publicly available.
+You can view this website here.
 
-You can view the website here.
-
-↓
-
-https://OR6107.github.io/
+[OR6107.github.io](https://OR6107.github.io/)
