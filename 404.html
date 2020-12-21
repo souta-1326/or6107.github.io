@@ -50,6 +50,20 @@
 	<meta property="og:title" content="ホーム" />
 	<meta property="og:description" content="OR6107のホームページ" />
 	<meta property="og:image" content="https://OR6107.github.io/img/icon/2020/twitter/twittercard.png" />
+	<!-- リダイレクト -->
+	<script type="text/javascript">
+		$(function () {
+			cnt = 5; //リダイレクトまでの秒数
+			$('#countdown').text(cnt);
+			setInterval(function () {
+				cnt--;
+				if (cnt <= 0) { //0になった際の処理
+					window.location.href = '/';
+				}
+				$('#countdown').text(cnt);
+			}, 1000);
+		});
+	</script>
 </head>
 
 <body>
@@ -79,7 +93,8 @@
 	-->
 		<div class="contents">
 			<div class="indexpage">
-				<h1>404 ERRROR<br>ページが見つかりませんでした</h1>
+				<h1>404 ERRROR - ページが見つかりません</h1>
+				<p><span id="countdown"></span>秒後に自動的にトップページへ移動します。</p>
 			</div>
 		</div>
 	</div>
