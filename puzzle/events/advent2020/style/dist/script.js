@@ -1,11 +1,11 @@
-const dataset = [3,1,1,1,18];
+const dataset = [5,2,2,1,1,1,10];
 
 // let colors = ['#8dd3c7', '#ffffb3', '#bebada', '#fb8072', '#80b1d3', '#fdb462', '#b3de69', '#fccde5', '#d9d9d9', '#bc80bd'];
 // let colors = ['#67001f', '#b2182b', '#d6604d', '#f4a582', '#fddbc7', '#e0e0e0', '#bababa', '#878787', '#4d4d4d', '#1a1a1a'];
 // const colors = ['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#fee08b', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2'];
-const colors = ['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#ffff00','#66c2a5', '#3288bd', '#5e4fa2'];
+const colors = ['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#ffb520','#66c2a5', '#3288bd', '#5e4fa2'];
 
-const textdata = ['ヤジリン', '四角に切れ','数独', 'スリザーリンク', '準備中']
+const textdata = ['ヤジリン', '四角に切れ', 'スリザーリンク','数独','美術館','ましゅ']
 
 const width = document.querySelector('.chart-wrapper').offsetWidth;
 const height = document.querySelector('.chart-wrapper').offsetHeight;
