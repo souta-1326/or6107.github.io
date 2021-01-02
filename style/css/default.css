@@ -184,7 +184,7 @@ h3 {
   border-width: 0px 0px 1px 5px;
   border-style: solid;
   border-color: #036b32;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   padding-left: 8px;
 }
@@ -579,9 +579,9 @@ div.main {
 /*****************sakuhin******************/
 
 div.sakuhinindex {
-  margin: 0 0 0 0;
   width: 600px;
-  margin: 10px 0 50px 10px;
+  margin: 20px 0 20px 10px;
+  vertical-align: middle;
 }
 
 div.sakuhintext {
@@ -594,7 +594,7 @@ div.sakuhintext {
 }
 
 div.sakuhinpage {
-  float: left;
+  text-align:center;
   /*overflow: hidden;*/
   width: 160px;
   margin: 0 0 0 20px;
@@ -660,6 +660,9 @@ details[open] .details-content {
 
 
 h1.abutton{
+  max-width: 475px;
+  margin: 0 auto;
+  margin-top: 20px;
   background-color: #ffb520;
   padding: 16px;
   color: black;
