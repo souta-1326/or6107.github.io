@@ -2,20 +2,20 @@
 
 @font-face {
   font-family: "SourceHanSansJP-Light";
-  src: url("../../fonts/SourceHanSansJP-Light.woff") format("woff"),
-    url("../../fonts/SourceHanSansJP-Light.otf") format("opentype");
+  src: url("../../assets/fonts/SourceHanSansJP-Light.woff") format("woff"),
+    url("../../assets/fonts/SourceHanSansJP-Light.otf") format("opentype");
 }
 
 @font-face {
   font-family: "SourceHanSansJP-Normal";
-  src: url("../../fonts/SourceHanSansJP-Normal.woff") format("woff"),
-    url("../../fonts/SourceHanSansJP-Normal.otf") format("opentype");
+  src: url("../../assets/fonts/SourceHanSansJP-Normal.woff") format("woff"),
+    url("../../assets/fonts/SourceHanSansJP-Normal.otf") format("opentype");
 }
 
 @font-face {
   font-family: "SourceHanSansJP-Regular";
-  src: url("../../fonts/SourceHanSansJP-Regular.woff") format("woff"),
-    url("../../fonts/SourceHanSansJP-Regular.otf") format("opentype");
+  src: url("../../assets/fonts/SourceHanSansJP-Regular.woff") format("woff"),
+    url("../../assets/fonts/SourceHanSansJP-Regular.otf") format("opentype");
 }
 
 * {
@@ -28,7 +28,7 @@
 }
 
 header {
-  background-color: #f1f1f1;
+  background-color: rgb(241, 200, 200);
   color: #19006e;
   padding: 10px;
   margin-bottom: 10px;
@@ -184,7 +184,7 @@ h3 {
   border-width: 0px 0px 1px 5px;
   border-style: solid;
   border-color: #036b32;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 8px;
 }
@@ -199,8 +199,34 @@ a:visited {
   font-weight: 600;
 }
 
-a.abutton:link,
-a.abutton:visited {
+a.off-button:link,
+a.off-button:visited {
+  background-color: #757575;
+  padding: 8px;
+  color: white;
+  border-radius: 8px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  pointer-events: none;
+}
+
+div.button{
+  text-align: center;
+  vertical-align: middle;
+  margin: 20px auto;
+}
+
+div.level{
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  bottom: 10px auto;
+}
+
+a.on-button:link,
+a.on-button:visited {
   background-color: #ffb520;
   padding: 8px;
   color: black;
@@ -211,7 +237,23 @@ a.abutton:visited {
   transition: all 0.5s;
 }
 
-a.abutton:hover {
+a.rest-button:link,
+a.rest-button:visited {
+  background-color: #19006e;
+  padding: 8px;
+  color: white;
+  border-radius: 8px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  pointer-events: none;
+}
+
+/* a.off-button:hover {
+  background-color: #19006e;
+} */
+a.on-button:hover {
   background-color: #ff6b80;
 }
 
@@ -273,7 +315,7 @@ header:after {
 span.logo {
   font-size: 40px;
   font-weight: 700;
-  letter-spacing: 0.4em;
+  /* letter-spacing: 0.4em; */
   float: left;
   height: 40px;
   padding: 0;
@@ -281,9 +323,10 @@ span.logo {
 }
 
 body {
-  background-color: #ffffff;
-  width: 100%;
+  background-color: rgb(200, 241, 200);
+  width: 1000px;
   padding-bottom: 2em;
+  margin: 0 auto;
 }
 
 div.title1 {
@@ -300,7 +343,7 @@ span.title1 {
 }
 
 div.container {
-  max-width: 1000px;
+  width: 1000px;
   display: block;
   margin: 0 auto;
   position: relative;
@@ -413,6 +456,7 @@ em.doubleline {
   padding: 0px;
   margin-bottom: 8px;
 }
+
 
 table.results {
   width: 80%;
@@ -552,36 +596,39 @@ table.whatsnew td {
 }
 
 div.twitter {
-  float: left;
+  float: right;
   /*overflow: hidden;*/
-  width: 250px;
-  margin: 0 30px 0 30px;
+  width: 300px;
+  margin: 0 0 0 0;
 }
 
 div.others {
   float: left;
-  margin: 0 30px 0 30px;
+  margin: 0 0 0 0;
   width: 600px;
 }
 
 div.indexpage {
-  margin: 0 30px 0 30px;
+  margin: 0 0px 0 30px;
   width: 970px;
   margin: 0 auto;
 }
 
 div.main {
-  margin: 0 30px 0 30px;
-  width: 600px;
+  margin: 0 30px 0 40px;
+  width: 950px;
   margin: 0 auto;
+  clear: both;
+  display: block;
+  text-align: center;
 }
 
 /*****************sakuhin******************/
 
 div.sakuhinindex {
+  margin: 0 0 0 0;
   width: 600px;
-  margin: 20px 0 20px 10px;
-  vertical-align: middle;
+  margin: 10px 0 50px 10px;
 }
 
 div.sakuhintext {
@@ -594,7 +641,7 @@ div.sakuhintext {
 }
 
 div.sakuhinpage {
-  text-align:center;
+  float: left;
   /*overflow: hidden;*/
   width: 160px;
   margin: 0 0 0 20px;
@@ -611,7 +658,7 @@ div.sakuhinpage {
 /*
 p.double-bottom {
   border-bottom: double;
-  }
+}
 */
 
 /*************************************************/
@@ -651,27 +698,59 @@ details[open] .details-content {
     transform: translateY(-10px);
     /* 上から表示 */
   }
-
+  
   100% {
     opacity: 1;
     transform: none;
   }
 }
-
-
-h1.abutton{
-  max-width: 475px;
-  margin: 0 auto;
-  margin-top: 20px;
-  background-color: #ffb520;
-  padding: 16px;
-  color: black;
-  border-radius: 16px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+/*------------calendar------------*/
+table.calendar {
+  border-collapse: collapse;
+  text-align: center;
+  border-spacing: 2px;
+  table-layout: fixed;
+  width: 100%;
+  height: 640px;
+  transform: scale(0.9);
+  display: table;
 }
-h1.abutton:hover {
-  background-color: #ff6b80;
+
+table.calendar {
+  /* display: table-row; */
+  /* vertical-align: inherit; */
+  border-color: inherit;
+  text-align: center;
+}
+
+table.calendar th {
+  border: solid 1px #f1f1f1;
+  background-color: #aaa;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border-width: 1px 1px 3px;
+  vertical-align: middle;
+  width: 140px;
+  height: 52px;
+  font-size: 15px;
+  position: relative;
+}
+
+table.calendar td {
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 10px;
+  height: 130px;
+  vertical-align: top;
+  position: relative;
+  /* vertical-align: top; */
+}
+
+span.day  {
+  display: inline-block;
+  font-size: 24px;
+  padding: 3px;
+  font-weight: 700;
+  color: #aaa;
 }
