@@ -33,9 +33,10 @@
 		#submit:focus {
 			box-shadow: 0 0 4px #7f7fff;
 		}
+
 		p {
-  		width: 400px;
-		height: 260px;
+			width: 400px;
+			height: 260px;
 		}
 	</style>
 	<link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet" type="text/css">
@@ -55,6 +56,7 @@
 
 	<script type="text/javascript">
 		const proxy = "https://1d878d9b.us-south.apigw.appdomain.cloud/proxy?url=";
+
 		function ajax(url, success) {
 			let req = new XMLHttpRequest();
 			req.onload = (function () {
@@ -65,6 +67,7 @@
 			req.send();
 		}
 		let rating_history = [];
+
 		function reload() {
 			rating_history = [];
 			user = "OR6107";
@@ -76,15 +79,18 @@
 					const d = new Date(contest.EndTime);
 					if (contest.IsRated == true && d <= date) {
 						contest.EndTime = d.getTime() / 1000;
-						contest.StandingsUrl = "https://" + contest.ContestScreenName + "/standings/?watching=" + user;
+						contest.StandingsUrl = "https://" + contest.ContestScreenName + "/standings/?watching=" +
+						user;
 						rating_history.push(contest);
 					}
 				}
 				let script = document.createElement('script');
 				script.src = './rating-graph.js';
 				document.body.appendChild(script);
-				let tweetText = document.getElementById("head").textContent + "\n" + location.href + " #AtCoderRollback";
-				document.getElementById("tweet").href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweetText);
+				let tweetText = document.getElementById("head").textContent + "\n" + location.href +
+					" #AtCoderRollback";
+				document.getElementById("tweet").href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(
+					tweetText);
 			});
 		};
 		window.addEventListener("load", () => {
@@ -95,7 +101,8 @@
 				reload();
 			}
 			let tweetText = location.href + " #AtCoderRollback";
-			document.getElementById("tweet").href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweetText);
+			document.getElementById("tweet").href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(
+				tweetText);
 		});
 	</script>
 
