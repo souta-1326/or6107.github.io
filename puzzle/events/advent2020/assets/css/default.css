@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 
 @font-face {
   font-family: "SourceHanSansJP-Light";
@@ -359,11 +359,7 @@ div.contents2 {
 div.contents p {
   text-indent: 1em;
   margin-bottom: 1em;
-  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "Noto Serif JP",
-    /*   '游明朝体', 'Yu Mincho', YuMincho,
-   'HG明朝E',*/
-      "SourceHanSansJP-Light",
-    "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  /*font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "Noto Serif JP",'游明朝体', 'Yu Mincho', YuMincho, 'HG明朝E',"SourceHanSansJP-Light", "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;*/
 }
 
 div.contents2 p {
