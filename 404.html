@@ -38,7 +38,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 	<link rel="manifest" href="/site.webmanifest">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
@@ -54,7 +54,9 @@
 			cnt = 5; //リダイレクトまでの秒数
 			$('#countdown').text(cnt);
 			setInterval(function () {
-				cnt--;
+				if (cnt > 0) {
+					cnt--;
+				}
 				if (cnt <= 0) { //0になった際の処理
 					window.location.href = '/';
 				}
@@ -90,7 +92,7 @@
 	<div class="title1"><span class="title1">OR6107</span></div>
 	-->
 		<div class="contents">
-			<div class="indexpage">
+			<div class="main">
 				<h1>404 Not Found</h1>
 				<p style="text-align: center;"><span id="countdown"></span>秒後に自動的にトップページへ移動します。</p>
 			</div>
