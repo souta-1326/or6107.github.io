@@ -668,6 +668,16 @@ h1.abutton{
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 h1.abutton:hover {
   background-color: #ff6b80;
+}
+
+a.twitter-button:link,
+a.twitter-button:visited {
+  color:#1da1f2;
+}
+
+a.twitter-button:hover {
+  color: #1da1f277;
 }
